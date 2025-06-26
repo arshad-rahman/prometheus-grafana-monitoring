@@ -29,6 +29,7 @@
 - [🔌 Prerequisites](#-prerequisites)  
 - [🚀 Installation](#-installation)  
 - [🎯 Usage](#-usage)  
+- [🛑 Stop & Cleanup](#-stop--cleanup)  
 - [📊 Endpoints](#-endpoints)  
 - [🎨 Grafana Dashboards](#-grafana-dashboards)  
 - [⚙️ Customization](#-customization)  
@@ -75,6 +76,28 @@ After a few seconds, access:
 * Grafana UI → `http://localhost:3000`
 
   * **Default login:** admin / admin
+
+---
+
+## 🛑 Stop & Cleanup
+
+To stop the monitoring stack:
+
+```bash
+docker-compose down
+```
+
+To stop and remove all containers, networks, and volumes:
+
+```bash
+docker-compose down -v
+```
+
+To relaunch the stack after stopping:
+
+```bash
+docker-compose up -d
+```
 
 ---
 
@@ -134,3 +157,4 @@ This project is licensed under the [MIT License](LICENSE).
 <p align="center">
   Built with ❤️ by <a href="https://github.com/arshad-rahman">arshad</a>
 </p>
+
